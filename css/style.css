@@ -215,3 +215,131 @@ header{
     transform:scale(1.05);
 
 }
+
+
+
+Create the complete css/style.css file for my existing BRACED website.
+
+My index.html is already completed.
+
+The website contains these sections:
+
+1. Header
+2. Navigation Bar
+3. Hero Section
+4. Why Choose BRACED
+5. Premium Calculator
+6. AI Inspection
+7. Testimonials
+8. FAQ
+9. Contact
+10. Footer
+
+Requirements:
+
+• Import Google Font: Poppins.
+
+• Use CSS Variables.
+
+Colours:
+
+Primary: #2563EB
+Secondary: #06B6D4
+Dark: #0F172A
+Light: #F8FAFC
+Text: #334155
+White: #FFFFFF
+
+Create styles for:
+
+- *
+- html
+- body
+- img
+- a
+- ul
+- section
+- .container
+
+Navigation:
+
+- Sticky header
+- Professional logo
+- Navigation links
+- Hover animations
+- Mobile responsive navigation
+
+Hero:
+
+- Two-column layout
+- Large heading
+- Paragraph
+- Hero image
+- Primary button
+- Secondary button
+
+Why Choose BRACED:
+
+- Responsive feature cards
+- Icons
+- Hover lift animation
+- Box shadows
+
+Premium Calculator:
+
+- Beautiful form
+- Responsive inputs
+- Modern button
+- Card layout
+
+AI Inspection:
+
+- Centered content
+- Modern card
+- CTA button
+
+Testimonials:
+
+- Testimonial cards
+- Responsive layout
+- Box shadows
+
+FAQ:
+
+- FAQ cards
+- Good spacing
+- Responsive
+
+Contact:
+
+- Contact form
+- Input styling
+- Textarea styling
+- Submit button
+
+Footer:
+
+- Dark footer
+- Copyright
+- Responsive
+
+General Requirements:
+
+- Flexbox
+- CSS Grid
+- Responsive Design
+- Mobile First
+- Hover Effects
+- Smooth Transitions
+- Rounded Corners
+- Modern Shadows
+- Professional Startup UI
+- Clean Typography
+- Beautiful Spacing
+- Media Queries for:
+  1200px
+  992px
+  768px
+  576px
+
+Return only the complete css/style.css code.
