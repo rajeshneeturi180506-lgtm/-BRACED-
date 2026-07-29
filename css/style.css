@@ -709,3 +709,83 @@ footer p{
     }
 
 }
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+.about-hero,
+.plans-hero,
+.claims-hero,
+.faq-hero,
+.contact-hero{
+
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:var(--white);
+
+}
+
+.about-hero h1,
+.plans-hero h1,
+.claims-hero h1,
+.faq-hero h1,
+.contact-hero h1{
+
+    font-size:52px;
+    margin-bottom:20px;
+
+}
+
+.about-hero p,
+.plans-hero p,
+.claims-hero p,
+.faq-hero p,
+.contact-hero p{
+
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+
+}
+
+/* ===========================
+   SECTION SPACING
+=========================== */
+
+.our-story,
+.mission,
+.vision,
+.core-values,
+.plan-comparison,
+.claims-process,
+.claim-form,
+.faq-page,
+.contact-page,
+.contact-info{
+
+    padding:90px 20px;
+
+}
+
+.our-story h2,
+.mission h2,
+.vision h2,
+.core-values h2,
+.plan-comparison h2,
+.claims-process h2,
+.claim-form h2,
+.faq-page h2,
+.contact-page h2,
+.contact-info h2{
+
+    text-align:center;
+    margin-bottom:40px;
+    color:var(--dark);
+
+}
