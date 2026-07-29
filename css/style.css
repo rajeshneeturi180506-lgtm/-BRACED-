@@ -345,6 +345,220 @@ General Requirements:
 Return only the complete css/style.css code.
 
 /* =========================================================
+   TESTIMONIALS
+========================================================= */
+
+.testimonials{
+    background:#f8fafc;
+}
+
+.testimonials h2{
+    text-align:center;
+    font-size:40px;
+    color:var(--dark);
+    margin-bottom:50px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:30px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+}
+
+.testimonial-card p{
+    font-style:italic;
+    margin-bottom:20px;
+    color:var(--text);
+}
+
+.testimonial-card h4{
+    color:var(--primary);
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+    background:#ffffff;
+}
+
+.faq h2{
+    text-align:center;
+    font-size:40px;
+    color:var(--dark);
+    margin-bottom:50px;
+}
+
+.faq-item{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+.faq-item h3{
+    color:var(--dark);
+    margin-bottom:12px;
+}
+
+.faq-item p{
+    color:var(--text);
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact{
+    background:#eef5ff;
+}
+
+.contact h2{
+    text-align:center;
+    font-size:40px;
+    color:var(--dark);
+    margin-bottom:40px;
+}
+
+.contact form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:16px;
+    border:1px solid #dbe3ef;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.contact textarea{
+    min-height:180px;
+    resize:vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 10px rgba(37,99,235,.15);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:var(--dark);
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+footer p{
+    opacity:.85;
+    margin:10px 0;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media(max-width:992px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .why-braced h2,
+    .premium-calculator h2,
+    .ai-inspection h2,
+    .testimonials h2,
+    .faq h2,
+    .contact h2{
+        font-size:32px;
+    }
+
+    section{
+        padding:60px 6%;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .logo a{
+        font-size:26px;
+    }
+
+}
+
+/* =========================================================
+   END OF FILE
+========================================================= */
+/* =========================================================
    WHY CHOOSE BRACED
 ========================================================= */
 
