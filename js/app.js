@@ -128,3 +128,129 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+/* =========================================================
+   FAQ ACCORDION
+========================================================= */
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    const question = item.querySelector("h3");
+    const answer = item.querySelector("p");
+
+    if(answer){
+
+        answer.style.display = "none";
+
+        question.style.cursor = "pointer";
+
+        question.addEventListener("click", () => {
+
+            const isOpen = answer.style.display === "block";
+
+            faqItems.forEach(faq => {
+
+                const p = faq.querySelector("p");
+
+                if(p){
+
+                    p.style.display = "none";
+
+                }
+
+            });
+
+            if(!isOpen){
+
+                answer.style.display = "block";
+
+            }
+
+        });
+
+    }
+
+});
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const revealElements = document.querySelectorAll(
+    ".feature-card, .testimonial-card, .faq-item"
+);
+
+function revealOnScroll(){
+
+    const windowHeight = window.innerHeight;
+
+    revealElements.forEach(element => {
+
+        const top = element.getBoundingClientRect().top;
+
+        if(top < windowHeight - 100){
+
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+
+        }
+
+    });
+
+}
+
+revealElements.forEach(element => {
+
+    element.style.opacity = "0";
+    element.style.transform = "translateY(40px)";
+    element.style.transition = "all .6s ease";
+
+});
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+/* =========================================================
+   BUTTON CLICK EFFECT
+========================================================= */
+
+document.querySelectorAll(".btn-primary, .btn-secondary").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        button.style.transform = "scale(.96)";
+
+        setTimeout(() => {
+
+            button.style.transform = "scale(1)";
+
+        },150);
+
+    });
+
+});
+
+/* =========================================================
+   HERO IMAGE FLOAT
+========================================================= */
+
+const heroImage = document.querySelector(".hero-image img");
+
+if(heroImage){
+
+    let up = true;
+
+    setInterval(() => {
+
+        heroImage.style.transform = up
+            ? "translateY(-10px)"
+            : "translateY(10px)";
+
+        up = !up;
+
+    },1500);
+
+}
