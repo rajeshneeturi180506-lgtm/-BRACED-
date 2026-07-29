@@ -340,3 +340,127 @@
 </body>
 
 </html>
+<!-- Insert this block *just before* the closing </body> tag in about.html -->
+<!-- Signup section (anchor target for CTAs) -->
+<section id="signup" class="signup section reveal">
+  <div class="container">
+    <h2 class="section-title">Start your free trial</h2>
+    <p class="section-sub">No credit card required. Try BRACED risk monitoring and claims for 14 days.</p>
+
+    <form class="card" aria-labelledby="signup" style="padding:20px; display:grid; gap:12px; max-width:720px;">
+      <!-- Note: In production wire this to your backend / serverless function -->
+      <label>
+        <span style="display:block;font-weight:600;margin-bottom:6px">Full name</span>
+        <input type="text" name="name" placeholder="Jane Doe" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06)">
+      </label>
+
+      <label>
+        <span style="display:block;font-weight:600;margin-bottom:6px">Email</span>
+        <input type="email" name="email" placeholder="you@example.com" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06)">
+      </label>
+
+      <label>
+        <span style="display:block;font-weight:600;margin-bottom:6px">Device</span>
+        <input type="text" name="device" placeholder="iPhone 15 Pro" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06)">
+      </label>
+
+      <div style="display:flex;gap:12px;align-items:center;">
+        <button type="submit" class="btn btn-primary">Start Free Trial</button>
+        <a class="btn btn-ghost" href="#contact" style="display:inline-flex;align-items:center">Contact Sales</a>
+      </div>
+
+      <p class="muted" style="color:var(--muted);font-size:0.95rem;margin:6px 0 0 0">
+        By starting a trial you agree to our <a href="#terms">terms</a> and <a href="#privacy">privacy policy</a>.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- Contact section (anchor target for Contact Sales) -->
+<section id="contact" class="contact section reveal">
+  <div class="container">
+    <h2 class="section-title">Contact Sales</h2>
+    <p class="section-sub">Have questions about coverage, enterprise plans, or integrations? Our team is here to help.</p>
+
+    <div class="contact-grid" style="display:grid; grid-template-columns: 1fr 320px; gap:20px; align-items:start; margin-top:18px;">
+      <form class="card" style="padding:20px; display:grid; gap:12px;">
+        <label>
+          <span style="display:block;font-weight:600;margin-bottom:6px">Company</span>
+          <input type="text" name="company" placeholder="ACME Inc." style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06)">
+        </label>
+
+        <label>
+          <span style="display:block;font-weight:600;margin-bottom:6px">Name</span>
+          <input type="text" name="name" placeholder="Your name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06)">
+        </label>
+
+        <label>
+          <span style="display:block;font-weight:600;margin-bottom:6px">Work email</span>
+          <input type="email" name="email" placeholder="you@company.com" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06)">
+        </label>
+
+        <label>
+          <span style="display:block;font-weight:600;margin-bottom:6px">Message</span>
+          <textarea name="message" rows="4" placeholder="Tell us about your needs..." style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06)"></textarea>
+        </label>
+
+        <div style="display:flex;gap:12px;align-items:center;">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <a class="btn btn-outline" href="mailto:sales@braced.example">Email sales</a>
+        </div>
+      </form>
+
+      <aside style="padding:18px; border-radius:12px; background:var(--surface); box-shadow:var(--shadow-sm);">
+        <h4 style="margin-top:0">Sales & Partnerships</h4>
+        <p style="color:var(--muted)">response time: typically within 1 business day</p>
+        <dl style="margin-top:12px;color:var(--muted);">
+          <dt style="font-weight:700">Email</dt><dd>sales@braced.example</dd>
+          <dt style="font-weight:700;margin-top:8px">Phone</dt><dd>+1 (555) 555-0123</dd>
+          <dt style="font-weight:700;margin-top:8px">Address</dt><dd>1600 Market St, San Francisco, CA</dd>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy policy (simple inline excerpt, link to full doc in production) -->
+<section id="privacy" class="policy section reveal">
+  <div class="container">
+    <h2 class="section-title">Privacy Policy</h2>
+    <p class="section-sub">Short summary — we minimize data collection and prioritize on-device processing where possible.</p>
+
+    <div class="card" style="padding:18px; margin-top:14px;">
+      <h4>Data we collect</h4>
+      <p style="color:var(--muted)">Minimal diagnostics, device model, and anonymized telemetry used to improve risk models and claims processing. We do not sell personal data.</p>
+
+      <h4 style="margin-top:12px">Your control</h4>
+      <p style="color:var(--muted)">You can opt out of analytics, request data exports, or delete your account by contacting support.</p>
+
+      <p style="margin-top:10px;color:var(--muted)"><em>For the full policy, link to your canonical privacy page in production.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- Terms of service (short excerpt) -->
+<section id="terms" class="policy section reveal">
+  <div class="container">
+    <h2 class="section-title">Terms of Service</h2>
+    <p class="section-sub">Summary of key terms — coverage rules, claims process, and subscription terms.</p>
+
+    <div class="card" style="padding:18px; margin-top:14px;">
+      <h4>Coverage overview</h4>
+      <p style="color:var(--muted)">Coverage varies by plan and geography. Claims are subject to verification and the terms agreed at sign-up.</p>
+
+      <h4 style="margin-top:12px">Billing & cancellations</h4>
+      <p style="color:var(--muted)">You can cancel at any time; prorated refunds may apply depending on billing cycle and promotions.</p>
+
+      <p style="margin-top:10px;color:var(--muted)"><em>Link this to the full legal terms page for production use.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- Minor accessibility helper: skip link (visually hidden until focused) -->
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"
+   onfocus="this.style.left='16px';this.style.top='16px';this.style.width='auto';this.style.height='auto';this.style.background='#fff';this.style.padding='8px 12px';this.style.borderRadius='8px';this.style.boxShadow='var(--shadow-sm)';">
+  Skip to content
+</a>
